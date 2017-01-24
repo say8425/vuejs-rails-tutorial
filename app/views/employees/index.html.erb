@@ -1,12 +1,13 @@
 <h1>Employees</h1>
 
 <div id="employees">
-  <table>
+  <table class="table">
     <thead>
     <tr>
       <th>Name</th>
       <th>Email</th>
       <th>Manager</th>
+      <th></th>
     </tr>
     </thead>
     <tbody>
@@ -22,7 +23,7 @@
       <td>
         <input type="checkbox" v-model="employee.manager"><br>
       </td>
-      <td><button v-on:click="hireEmployee">Hire</button></td>
+      <td><button class="btn btn-default" v-on:click="hireEmployee">Hire</button></td>
     </tr>
     <tr is="employee-row" v-for="employee in employees" :employee="employee"></tr>
     </tbody>
