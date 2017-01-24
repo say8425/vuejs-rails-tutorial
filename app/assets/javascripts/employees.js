@@ -3,7 +3,7 @@ var employees = new Vue({
   data: {
     employees: []
   },
-  ready: function () {
+  mounted: function () {
     var that;
     that = this;
     $.ajax({
