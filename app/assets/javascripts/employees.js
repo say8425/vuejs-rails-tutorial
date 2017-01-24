@@ -1,7 +1,13 @@
 var employees = new Vue({
   el: '#employees',
   data: {
-    employees: []
+    employees: [],
+    employee: {
+      name: '',
+      email: '',
+      manager: false
+    },
+    errors: {}
   },
   mounted: function () {
     var that;
