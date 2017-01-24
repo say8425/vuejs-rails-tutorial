@@ -33,7 +33,7 @@ var employees = new Vue({
           that.employees.push(res);
         },
         error: function(res) {
-          that.errors = res.responseJSON.errors;
+          that.errors = res.responseJSON.error;
         }
       })
     }
