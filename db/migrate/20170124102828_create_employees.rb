@@ -5,7 +5,7 @@ class CreateEmployees < ActiveRecord::Migration[5.0]
       t.string :email
       t.boolean :manager
 
-      t.timestamps
+      t.timestamps null: false
     end
   end
 end
